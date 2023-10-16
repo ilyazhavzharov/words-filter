@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words filter</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="first-screen">
+        <div class="container">
+            <div class="hello-img">
+                <img class="hello-img-animation" src="img/hello.svg" alt="hello-img">
+            </div>
+            <div class="intro-text">
+                <h1 class="head-text" data-aos="zoom-in" data-aos-duration="2500">WELCOME TO THE SITE! CHECK YOURSELF
+                    :)</h1>
+                <div class="description-wrapper" data-aos="zoom-in" data-aos-duration="2500">
+                    <p class="head-description">On this site you can check your level of knowledge of English or
+                        Russian
+                        words. If you enter an English word, it is filtered and added to a specific group. If the word
+                        already exists, a hint will be displayed indicating that the word has already been added. I
+                        made
+                        this site more for myself because it was interesting how many English words I know :)
+                    </p>
+                    <p class="important-text">IMPORTANT! If you update the site, all information will be lost!!! BUT WE
+                        CAN DOWNLOAD YOR WORDS!!!</p>
+                </div>
+            </div>
+            <div class="head-block">
+                <div class="input-text" data-aos="zoom-in" data-aos-duration="2500">
+                    <input type="text" id="inputField" class="text-input"
+                        placeholder="Write your word(english or russian)">
+                </div>
+                <div class="group-button" data-aos="zoom-in" data-aos-duration="2500">
+                    <button class="button-1" onclick="groupWords()">DEFINE WORD</button>
+                </div>
+                <div class="download-button" data-aos="zoom-in" data-aos-duration="2500">
+                    <button class="button-2" onclick="downloadTextFile()">DOWNLOAD</button>
+                </div>
+            </div>
+            <div id="output" class="output" data-aos="fade-up" data-aos-duration="2500"></div>
+            <p id="totalCount" class="total-count"></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
